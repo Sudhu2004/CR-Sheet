@@ -42,7 +42,7 @@ ll getCount(vector<ll>& arr, int n, ll x) {
     // if there exists x - it in right then there is a sum possible
     for(ll it: left) {
 
-        // if does exist then lower_bound = upper_bound + 1;
+        // if does exist then lower_bound = upper_bound + 1; in this case
         // else lower_boud == upper_bound
         auto low_iterator = lower_bound(right.begin(), right.end(), x - it);
         auto high_iterator = upper_bound(right.begin(), right.end(), x - it);
