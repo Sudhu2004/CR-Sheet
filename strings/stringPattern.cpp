@@ -9,7 +9,7 @@ int KMP(string str, string pattern) {
     int m= pattern.size();
 
     vector<int> lps(m, 0);
-
+    
     int prevLPS = 0, i = 1;
     while( i < m ) {
         if(pattern[prevLPS] == pattern[i]) {
