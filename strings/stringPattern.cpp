@@ -95,7 +95,9 @@ int Zalgo(string str, string pattern) {
     int n = pattern.size();
     vector<int> res = ZValues(news);
     int cnt = 0;
+    cout << news << endl;
     for(int i = n; i< (m + n) ; i++) {
+        cout << res[i] << " ";
         if(res[i] == n) cnt++;
     }
 
